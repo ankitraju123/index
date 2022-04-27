@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+#container{
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 100px 200px 100px 320px 320px 320px ;
+    column-gap: 20px;
+    row-gap: 140px;
+    grid-template-areas: 
+    "a a a a"
+    "e f f h "
+    "j j j j"
+    "m n o p"
+    "q r s t"
+    "u v w x"
+    
+    ;
+    
+}
+#container :nth-child(1){
+    border:1px solid red;
+    grid-area: a;
+    font-size: 40px;
+    font-weight: 800;
+    text-align: center;
+   
+    margin-top: 15px;
+}
+#container :nth-child(2){
+    border:1px solid red;
+    grid-area: b;
+}
+#container :nth-child(3){
+    border:1px solid red;
+    grid-area: c;
+}
+#container :nth-child(4){
+    border:1px solid red;
+    grid-area: d;
+}
+#container :nth-child(5){
+    border:1px solid red;
+    grid-area: e;
+}
+#container :nth-child(6){
+    border:1px solid red;
+    grid-area: f;
+}
+#container :nth-child(7){
+    border:1px solid red;
+    grid-area: g;
+}
+#container :nth-child(8){
+    border:1px solid red;
+    grid-area: h;
+}
+
+#container :nth-child(9){
+    border:1px solid red;
+    grid-area: i;
+}
+#container :nth-child(10){
+    border:1px solid red;
+    grid-area: j;
+}
+#container :nth-child(11){
+    border:1px solid red;
+    grid-area: k;
+}
+#container :nth-child(12){
+    border:1px solid red;
+    grid-area: l;
+}
+#container :nth-child(13){
+    border:1px solid red;
+    grid-area: m;
+}
+#container :nth-child(14){
+    border:1px solid red;
+    grid-area: n;
+}
+#container :nth-child(15){
+    border:1px solid red;
+    grid-area: o;
+}
+#container :nth-child(16){
+    border:1px solid red;
+    grid-area: p;
+}
+#container :nth-child(17){
+    border:1px solid red;
+    grid-area: q;
+}
+#container :nth-child(18){
+    border:1px solid red;
+    grid-area: r;
+}
+#container :nth-child(19){
+    border:1px solid red;
+    grid-area: s;
+}
+#container :nth-child(20){
+    border:1px solid red;
+    grid-area: t;
+}
+#container :nth-child(21){
+    border:1px solid red;
+    grid-area: u;
+}
+#container :nth-child(22){
+    border:1px solid red;
+    grid-area: v;
+}
+#container :nth-child(23){
+    border:1px solid red;
+    grid-area: w;
+}
+#container :nth-child(24){
+    border:1px solid red;
+    grid-area: x;
+}
+#container :nth-child(25){
+    border:1px solid red;
+    grid-area: y;
+}
+#container :nth-child(26){
+    border:1px solid red;
+    grid-area: z;
+}
+.six>img{
+    margin-left: 100px;
+}
+.img{
+    height:50px;
+    width:100px;
+    margin-top:-20px
+}
+
+
+
+
+
+
+
+
+
+@media all and (min-width: 451px) and (max-width: 750px) {
+        #container {
+          grid-template-columns: repeat(2, 1fr);
+          grid-template-rows:   200px 200px;
+          grid-template-areas:
+            "a b"
+            "c d"  
+            "e f"   
+            "g h"
+            "i j"
+            "k l"
+            "m n"
+            "o p"
+            "q r"
+            "s t"
+            "u v"
+            "w x"
+
+     
+     
+     
+        }    
+
+      }
+
+
+
+
+
+
+
+</style> 
+</head>
+<body>
+  <div id="container">
+<div class="one">Board Members</div>
+<div class="two" ></div>
+<div class="three"></div>
+<div class="four"></div>
+<div class="five">
+    <img src="https://www.masaischool.com/img/our-investors/india-q-borderless.svg">
+</div>
+<div class="six">
+    <img src="https://www.masaischool.com/img/our-investors/unitus-borderless.svg">
+</div>
+<div class="seven"></div>
+<div class="Eight">
+    <img src="https://www.masaischool.com/img/our-investors/omidyar-borderless.svg">
+</div>
+<div class="Nine"></div>
+<div  class="Ten"></div>
+<div class="Eleven"></div>
+<div class="Twelve"></div>
+<div class="Thirteen">
+    <img  src="https://masai-website-images.s3.ap-south-1.amazonaws.com/Vijay_Shekhar_Sharma_Paytm_96f52579b8.jpg">
+    <h2>Vijay shekhar sharma</h2>
+    <p>Founder and CEO</p>
+    <img class="img" src="https://masai-website-images.s3.ap-south-1.amazonaws.com/paytm_rect_06df45a24f.svg">
+</div>
+<div class="Fourteen">
+    <img  src="https://masai-website-images.s3.ap-south-1.amazonaws.com/Rectangle_427_637d69bb57.png">
+    <h2>Kunal Shah</h2>
+    <p>Founder </p>
+    <img class="img" src="https://masai-website-images.s3.ap-south-1.amazonaws.com/cred_0a47d7b4f8.png">
+</div>
+<div class="15">
+    <img  src="https://masai-website-images.s3.ap-south-1.amazonaws.com/amrish_rau_pine_labs_144e5e587c.jpg">
+    <h2>Amrish Rau</h2>
+    <p>CEO </p>
+    <img class="img" src="https://masai-website-images.s3.ap-south-1.amazonaws.com/pine_labs_0aa2407434.png">
+</div>
+<div class="16">
+    <img  src="https://masai-website-images.s3.ap-south-1.amazonaws.com/Sampad_swain_Instamojo_f12bf6341e.jpg">
+    <h2>Swampad Sain</h2>
+    <p>CoFounder and CEO </p>
+    <img class="img" src="https://masai-website-images.s3.ap-south-1.amazonaws.com/instamojo_8763e704f7.png">
+</div>
+<div class="17">
+    <img  src="https://masai-website-images.s3.ap-south-1.amazonaws.com/Ankush_Sachdeva_Sharechat_4e44dbbe6b.jpg">
+    <h2>Ankush Swachdeva</h2>
+    <p>CoFounder and CEO </p>
+    <img class="img" src="https://masai-website-images.s3.ap-south-1.amazonaws.com/sharechat_rect_73d95cd4e1.svg">
+</div>
+<div class="18">
+    <img  src="https://masai-website-images.s3.ap-south-1.amazonaws.com/bhanu_pratap_singh_sharechat_11fdd7b47a.jpg">
+    <h2>Bhanu Pratap Singh</h2>
+    <p>CoFounder and CTO </p>
+    <img class="img" src="https://masai-website-images.s3.ap-south-1.amazonaws.com/sharechat_rect_73d95cd4e1.svg">
+</div>
+<div class="19">
+    <img  src="https://masai-website-images.s3.ap-south-1.amazonaws.com/farid_ahsan_sharechat_1251f28141.png">
+    <h2>Farid Ashan</h2>
+    <p>CoFounder and COO </p>
+    <img class="img" src="https://masai-website-images.s3.ap-south-1.amazonaws.com/sharechat_rect_73d95cd4e1.svg">
+
+</div>
+<div class="20">
+    <img  src="https://masai-website-images.s3.ap-south-1.amazonaws.com/Amit_Kumar_Agarwal_Nobroker_a8a279ad91.jpg">
+    <h2>Amit Kumar Agrawal</h2>
+    <p>Founder and CEO </p>
+    <img class="img" src="https://masai-website-images.s3.ap-south-1.amazonaws.com/nobroker_rect_28c9778c30.svg">
+</div>
+<div class="21">
+    <img  src="https://masai-website-images.s3.ap-south-1.amazonaws.com/Akhil_Gupta_Nobroker_539cd97f6c.jpg">
+    <h2>AKhil Gupta</h2>
+    <p>Founder and CTO </p>
+    <img class="img" src="https://masai-website-images.s3.ap-south-1.amazonaws.com/nobroker_rect_28c9778c30.svg">
+</div>
+<div class="22">
+    <img  src="https://masai-website-images.s3.ap-south-1.amazonaws.com/saurbh_garg_nobroker_c0c71cc431.jpeg">
+    <h2>Saurabh Garg</h2>
+    <p>CoFounder and CBO </p>
+    <img class="img" src="https://masai-website-images.s3.ap-south-1.amazonaws.com/nobroker_rect_28c9778c30.svg">
+</div>
+<div class="23">
+    <img  src="https://masai-website-images.s3.ap-south-1.amazonaws.com/Vipin_Pathak_Care24_acd02cd173.jpg">
+    <h2>Vipin Pathak</h2>
+    <p>CoFounder and CEO </p>
+    <img class="img" src="https://masai-website-images.s3.ap-south-1.amazonaws.com/care24_1164f7a2cd.png">
+</div>
+<div class="24">
+    <img  src="https://masai-website-images.s3.ap-south-1.amazonaws.com/Ramakant_Sharma_livespace_0308e3627d.jpg">
+    <h2>Ramakant Sharma</h2>
+    <p>Founder  </p>
+    <img class="img" src="https://masai-website-images.s3.ap-south-1.amazonaws.com/livspace_f9318b2e8d.png">
+</div>
+<div>
+    <img  src="https://masai-website-images.s3.ap-south-1.amazonaws.com/Akhil_Gupta_Nobroker_539cd97f6c.jpg">
+    <h2>AKhil Gupta</h2>
+    <p>Founder and CTO </p>
+    <img class="img" src="https://masai-website-images.s3.ap-south-1.amazonaws.com/nobroker_rect_28c9778c30.svg">
+</div>
+<div>
+    <img  src="https://masai-website-images.s3.ap-south-1.amazonaws.com/Akhil_Gupta_Nobroker_539cd97f6c.jpg">
+    <h2>AKhil Gupta</h2>
+    <p>Founder and CTO </p>
+    <img class="img" src="https://masai-website-images.s3.ap-south-1.amazonaws.com/nobroker_rect_28c9778c30.svg">
+</div>
+<div>
+    <img  src="https://masai-website-images.s3.ap-south-1.amazonaws.com/Akhil_Gupta_Nobroker_539cd97f6c.jpg">
+    <h2>AKhil Gupta</h2>
+    <p>Founder and CTO </p>
+    <img class="img" src="https://masai-website-images.s3.ap-south-1.amazonaws.com/nobroker_rect_28c9778c30.svg">
+</div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+
+
+  </div>
+  
+</body>
+</html>

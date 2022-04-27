@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<!-- saved from url=(0087)file:///C:/Users/HP/Desktop/web%2018/coggeegrid/coffeegrid/gridarea/gridarea/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+#container{
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 200px 200px;
+    gap:0px;
+    margin:auto;
+    grid-template-areas: 
+    "a a c d"
+    "e f c d"
+    ;
+   
+    
+    ;
+    margin-top: 100px;
+}
+
+#container>div{
+    
+    background-color: rgb(71, 59, 59);
+    color:white;
+    font-size: 60px;
+    font-weight: 800;
+    margin-left: 50px;
+    margin-top: 50px;
+    border-radius: 20px;
+}
+
+#container :nth-child(1){
+    grid-area: a;
+}
+#container :nth-child(2){
+    grid-area: b;
+}
+#container :nth-child(3){
+    grid-area: c;
+}
+#container :nth-child(4){
+    grid-area: d;
+}
+#container :nth-child(5){
+    grid-area: e;
+}
+#container :nth-child(6){
+    grid-area: f;
+}
+#container :nth-child(7){
+    grid-area: g;
+}
+#container :nth-child(8){
+    grid-area: h;
+    
+}
+
+
+
+@media all and (min-width: 451px) and (max-width: 750px) {
+    #container{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 200px 200px 200px;
+    gap:0px;
+    margin:auto;
+    grid-template-areas: 
+    "a a a"
+    "b b b"
+    "d d d"
+    ;
+    
+    
+    ;
+    margin-top: 100px;
+}
+
+       
+      }
+
+
+</style>
+</head>
+<body>
+  <div id="container">
+      <div>A</div>
+      <div></div>
+      <div>B</div>
+      <div>E</div>
+      <div>C</div>
+      <div>D</div>
+      <div></div>
+      <div></div>
+  </div>
+  
+
+</body></html>

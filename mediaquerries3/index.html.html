@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<!-- saved from url=(0102)file:///C:/Users/HP/Desktop/web%2018/coggeegrid/coffeegrid/gridarea/mediaquerries,navigation/3box.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+   #container{
+       display:grid;
+       grid-template-columns: repeat(4,1fr);
+       grid-template-rows: 150px 200px 200px 200px;
+       grid-template-areas: 
+       "a a a a"
+       "e e e h"
+       "i i i l"
+       "m m m p";
+       gap:20px
+   }
+#container :nth-child(1)
+{
+    border: 1px solid red;
+    grid-area: a;
+    background-color: yellow;
+    font-size: 40px;
+    font-weight: 800;
+}
+#container :nth-child(2)
+{
+    border: 1px solid red;
+    grid-area: b;
+    background-color: yellow;
+}
+#container :nth-child(3)
+{
+    border: 1px solid red;
+    grid-area: c;
+    background-color: yellow;
+}
+#container :nth-child(4)
+{
+    border: 1px solid red;
+    background-color:yellow;
+    grid-area: d;
+    
+}
+#container :nth-child(5)
+{
+    border: 1px solid red;
+    background-color: red;
+    grid-area: e;
+    
+}
+#container :nth-child(6)
+{
+    border: 1px solid red;
+    background-color: red;
+    grid-area: f;
+    
+}
+#container :nth-child(7)
+{
+    border: 1px solid red;
+    background-color: red;
+    grid-area: g;
+    
+}
+#container :nth-child(8)
+{
+    border: 1px solid red;
+    background-color: rgb(67, 214, 67);
+    grid-area: h;
+    
+}
+#container :nth-child(9)
+{
+    border: 1px solid red;
+    background-color: red;
+    grid-area: i;
+}
+#container :nth-child(10)
+{
+    border: 1px solid red;
+    background-color: red;
+    grid-area: j;
+    
+}
+#container :nth-child(11)
+{
+    border: 1px solid red;
+    background-color: red;
+    grid-area: k;
+    
+}
+#container :nth-child(12)
+{
+    border: 1px solid red;
+    background-color:rgb(67, 214, 67) ;
+    grid-area: l;
+    
+}
+#container :nth-child(13)
+{
+    border: 1px solid red;
+    background-color:red ;
+    grid-area: m;
+    
+}
+#container :nth-child(14)
+{
+    border: 1px solid red;
+    background-color:red ;
+    grid-area: n;
+    
+}
+#container :nth-child(15)
+{
+    border: 1px solid red;
+    background-color:red ;
+    grid-area: o;
+    
+}
+#container :nth-child(16)
+{
+    border: 1px solid red;
+    background-color:rgb(67, 214, 67) ;
+    grid-area: p;
+    
+}
+
+
+@media all and (min-width: 451px) and (max-width: 750px) {
+  #container{
+       display:grid;
+       grid-template-columns: repeat(3,1fr);
+       grid-template-rows: 150px 200px 200px 200px;
+       grid-template-areas: 
+       "a a a "
+       "e e e "
+       "e e e "
+       "h l p";
+       gap:20px;
+   }
+       
+      }
+
+      @media all and (min-width: 100px) and (max-width: 450px) {
+  #container{
+       display:grid;
+       grid-template-columns: repeat(1,1fr);
+       grid-template-rows: 150px 200px 200px 200px 200px;
+       grid-template-areas: 
+       "a"
+       "e"
+       "h"
+       "l"
+       "p";
+       gap:20px;
+   }
+       
+      }
+     
+
+
+
+
+
+</style>
+</head>
+<body>
+  <div id="container">
+   <div>Navigation</div>
+   <div class="one"></div>
+   <div class="two"></div>
+   <div class="three"></div>
+   <div class="four">Left Box</div>
+   <div class="five"></div>
+   <div class="six"></div>
+   <div class="seven">Right Box1</div>
+   <div class="eight"></div>
+   <div class="nine"></div>
+   <div class="ten"></div>
+   <div class="eleven">Right Box2</div>
+   <div class="twelve"></div>
+   <div class="thirteen"></div>
+   <div class="fourteen"></div>
+   <div class="fifteen">Right Box3</div>
+  </div>
+  
+
+</body></html>

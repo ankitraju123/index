@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+
+
+
+</style>
+</head>
+<body>
+  <select id="gender">
+ <option value="">select gender</option>
+ <option value="male">M</option>
+ <option value="female">F</option>
+
+  </select>
+  <input type="text" name="yob" id="yob" >
+  <button onclick="legal()">submit</button>
+</body>
+</html>
+
+<script>
+function legal() {
+  var yob=document.getElementById("yob").value;
+  
+  var age=2022-yob
+  var gender=document.getElementById("gender").value
+  if(gender=="male")
+  {
+    if(age>21)
+    {
+      var result=document.getElementById("yob").value="you can marry"
+      alert(result)
+    }
+    else{
+      var result=document.getElementById("yob").value="you can't marry"
+      alert(result)
+
+    }
+
+  }
+  if(gender="female")
+  {
+    if(age>18)
+    {
+      var result=document.getElementById("yob").value="you can marry"
+      alert(result)
+    }
+    else{
+      var result=document.getElementById("yob").value="you can't marry"
+      alert(result)
+  }
+}
+}
+
+
+
+</script>

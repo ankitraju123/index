@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<!-- saved from url=(0075)file:///C:/Users/HP/Downloads/WEB-18%20U2C2_620484/WEB-18%20U2C2/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+#header>h1{
+text-align: center;
+}
+#header>p{
+text-align: center;
+}
+#doctors{
+  display:grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-template-rows: 350px;
+  width:70%;
+  margin:auto;
+  gap:20px;
+  grid-template-areas: 
+  "a b c d"
+  ;
+
+}
+
+#doctors>div{
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  
+}
+
+#doctors :nth-child(1)
+{
+  grid-area: a;
+}
+
+#doctors :nth-child(2)
+{
+  grid-area: b;
+}
+#doctors :nth-child(3)
+{
+  grid-area: c;
+}
+#doctors :nth-child(4)
+{
+  grid-area: d;
+}
+#doctors :nth-child(1) :nth-child(3)
+{
+  margin-top: -20px;
+  text-align: center;
+}
+#doctors :nth-child(1) :nth-child(4)
+{
+  margin-top: -20px;
+  text-align: center;
+}
+#doctors :nth-child(1) :nth-child(2)
+{
+  margin-top: -5px;
+  text-align: center;
+}
+/* .buttons-div :nth-child(2)
+{
+  margin-left: 180px;
+} */
+
+
+
+#doctors :nth-child(2) :nth-child(3)
+{
+  margin-top: -20px;
+  text-align: center;
+}
+#doctors :nth-child(2) :nth-child(4)
+{
+  margin-top: -20px;
+  text-align: center;
+}
+#doctors :nth-child(2) :nth-child(2)
+{
+  margin-top: -5px;
+  text-align: center;
+}
+#doctors :nth-child(3) :nth-child(3)
+{
+  margin-top: -20px;
+  text-align: center;
+}
+#doctors :nth-child(3) :nth-child(4)
+{
+  margin-top: -20px;
+  text-align: center;
+}
+#doctors :nth-child(3) :nth-child(2)
+{
+  margin-top: -5px;
+  text-align: center;
+}
+#doctors :nth-child(4) :nth-child(3)
+{
+  margin-top: -20px;
+  text-align: center;
+}
+#doctors :nth-child(4) :nth-child(4)
+{
+  margin-top: -20px;
+  text-align: center;
+}
+#doctors :nth-child(4) :nth-child(2)
+{
+  margin-top: -5px;
+  text-align: center;
+}
+.buttons-div :nth-child(1){
+  color:rgb(36, 226, 223);
+  border-radius: 10px;
+  padding:5px 10px 5px 10px;
+  border:0px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+
+}
+.buttons-div :nth-child(2){
+  background-color: rgb(238, 66, 40);
+  border-radius: 10px;
+  padding:5px 10px 5px 10px;
+
+}
+.buttons-div{
+ display: flex;
+ align-items:stretch;
+}
+
+
+/* idservices************************** */
+#service{
+  display:grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: 250px 250px;
+  gap:20px;
+  width:60%;
+  grid-template-areas: 
+  "a b c"
+  "d e f";
+ 
+  margin:auto;
+  margin-top: 100px;
+
+}
+#service>div{
+  
+  text-align: center;
+}
+
+
+#service :nth-child(1)
+{
+  grid-area: a;
+}
+
+#service :nth-child(2)
+{
+  grid-area: b;
+}
+
+#service :nth-child(3)
+{
+  grid-area: c;
+}
+
+#service :nth-child(4)
+{
+  grid-area: d;
+}
+
+#service :nth-child(5)
+{
+  grid-area: e;
+}
+
+#service :nth-child(6)
+{
+  grid-area: f;
+}
+
+
+
+
+
+
+      /* Medium screens */
+      @media all and (min-width: 451px) and (max-width: 750px) {
+
+        #doctors{
+  display:grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-template-rows: 200px 200px;
+  width:70%;
+  margin:auto;
+  gap:20px;
+  grid-template-areas: 
+  "a b"
+  "c d"
+  ;
+
+}
+#service{
+  display:grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-template-rows: 200px 200px 200px;
+  gap:20px;
+  width:60%;
+  grid-template-areas: 
+  "a b"
+  "c d"
+  "e f"
+  ;
+  border:1px solid black;
+ 
+
+}
+
+
+
+      }
+      /* Small screens */
+      @media all and (min-width: 100px) and (max-width: 450px) {
+
+
+        #doctors{
+  display:grid;
+  grid-template-columns: repeat(1,1fr);
+  grid-template-rows: 200px 200px 200px 200px;
+  width:70%;
+  margin:auto;
+  gap:20px;
+  grid-template-areas: 
+  "a"
+  "b"
+  "c"
+  "d"
+  ;
+
+}
+#service{
+  display:grid;
+  grid-template-columns: repeat(1,1fr);
+  grid-template-rows: 200px 200px 200px 200px 200px 200px;
+  gap:20px;
+  width:60%;
+  grid-template-areas: 
+  "a"
+  "b"
+  "c"
+  "d"
+  "e"
+  "f"
+  ;
+  border:1px solid black;
+ 
+
+}
+
+
+
+
+      }
+    </style>
+  </head>
+  <body>
+    <div id="header">
+      <h1>Our Specialist</h1>
+      <p>
+        Green above he cattle god saw day multiply under fill in the cattle fowl
+        a all, living, tree word link available in the service for subdue fruit.
+      </p>
+    </div>
+    <!-- Top-section -->
+    <div id="doctors">
+      <div>
+        <img src="./index_files/doctor1.jpg.webp" alt="doctor1">
+        <!-- keep image,h3,h6 here -->
+        <h3>Ethal Davis</h3>
+        <h6>SR.FACULTY DATA SCIENCE</h6>
+        <p>If you are lookin at blank cassates on the web,you may be very confused at the.</p>
+
+        <div class="buttons-div">
+          <button>Know More</button>
+          <button>Book Now</button>
+        </div>
+      </div>
+      <div>
+        <!-- keep image,h3,h6 here -->
+        <img src="./index_files/doctor1.jpg.webp" alt="doctor1">
+        <!-- keep image,h3,h6 here -->
+        <h3>Dand Mories</h3>
+        <h6>SR.FACULTY DATA SCIENCE</h6>
+        <p>If you are lookin at blank cassates on the web,you may be very confused at the.</p>
+        <div class="buttons-div">
+          <button>Know More</button>
+          <button>Book Now</button>
+        </div>
+      </div>
+      <div>
+        <!-- keep image,h3,h6 here -->
+        <img src="./index_files/doctor1.jpg.webp" alt="doctor1">
+        <!-- keep image,h3,h6 here -->
+        <h3>Align Boards</h3>
+        <h6>SR.FACULTY DATA SCIENCE</h6>
+        <p>If you are lookin at blank cassates on the web,you may be very confused at the.</p>
+        <div class="buttons-div">
+          <button>Know More</button>
+          <button>Book Now</button>
+        </div>
+      </div>
+      <div>
+        <!-- keep image,h3,h6 here -->
+        <img src="./index_files/doctor1.jpg.webp" alt="doctor1">
+        <!-- keep image,h3,h6 here -->
+        <h3>Jason Limit</h3>
+        <h6>SR.FACULTY DATA SCIENCE</h6>
+        <p>If you are lookin at blank cassates on the web,you may be very confused at the.</p>
+        <div class="buttons-div">
+          <button>Know More</button>
+          <button>Book Now</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom section  -->
+    <div id="service">
+      <div>
+        <!-- keep image,h5,p here -->
+        <img src="./index_files/bottom_132437.jpeg" alt="teeth">
+        <h5>Teeth Whitening</h5>
+        <p>In pretium neque a libero congue.Elit diam lectus.Prasent lacinia vitac sit mattis mollis maximus</p>
+      </div>
+      <div>
+        <!-- keep image,h5,p here -->
+        <img src="./index_files/bottom_132437.jpeg" alt="teeth">
+        <h5>Teeth Whitening</h5>
+        <p>In pretium neque a libero congue.Elit diam lectus.Prasent lacinia vitac sit mattis mollis maximus</p>
+      </div>
+      <div>
+        <!-- keep image,h5,p here -->
+        <img src="./index_files/bottom_132437.jpeg" alt="teeth">
+        <h5>Teeth Whitening</h5>
+        <p>In pretium neque a libero congue.Elit diam lectus.Prasent lacinia vitac sit mattis mollis maximus</p>
+      </div>
+      <div>
+        <!-- keep image,h5,p here -->
+        <img src="./index_files/bottom_132437.jpeg" alt="teeth">
+        <h5>Teeth Whitening</h5>
+        <p>In pretium neque a libero congue.Elit diam lectus.Prasent lacinia vitac sit mattis mollis maximus</p>
+      </div>
+      <div>
+        <!-- keep image,h5,p here -->
+        <img src="./index_files/bottom_132437.jpeg" alt="teeth">
+        <h5>Teeth Whitening</h5>
+        <p>In pretium neque a libero congue.Elit diam lectus.Prasent lacinia vitac sit mattis mollis maximus</p>
+      </div>
+      <div>
+        <!-- keep image,h5,p here -->
+        <img src="./index_files/bottom_132437.jpeg" alt="teeth">
+        <h5>Teeth Whitening</h5>
+        <p>In pretium neque a libero congue.Elit diam lectus.Prasent lacinia vitac sit mattis mollis maximus</p>
+      </div>
+    </div>
+  
+
+</body></html>
